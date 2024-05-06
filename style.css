@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://source.unsplash.com/1920x1080/?dark,space') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-blur: 5px;
+}
+
+#calculator {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px; /* Adjusted width for better alignment */
+}
+
+input[type="text"] {
+    width: calc(100% - 40px);
+    height: 50px;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between; /* Adjusted alignment for better spacing */
+    margin-bottom: 10px; /* Added margin bottom for better spacing */
+}
+
+.row:last-child {
+    justify-content: space-between; /* Adjusted alignment for the last row */
+    margin-bottom: 0; /* Removed margin bottom for the last row */
+}
+
+.row:last-child input[type="button"] {
+    width: 100%; /* Full width for the buttons in the last row */
+    border-radius: 10px; /* Added border-radius for the clear button */
+    height: 60px; /* Increased height for the clear button */
+}
+
+input[type="button"] {
+    width: calc(25% - 10px); /* Adjusted width for better spacing */
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    transition: background-color 0.3s;
+}
+
+input[type="button"]:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+input[type="button"].special {
+    background-color: rgba(255, 92, 92, 0.8);
+}
+
+input[type="button"].special:hover {
+    background-color: rgba(255, 92, 92, 1);
+}
+
+input[type="button"].equal {
+    background-color: rgba(40, 167, 69, 0.8);
+}
+
+input[type="button"].equal:hover {
+    background-color: rgba(40, 167, 69, 1);
+}

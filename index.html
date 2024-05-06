@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="result" readonly>
+        <div class="row">
+            <input type="button" value="sin" onclick="trig('sin')">
+            <input type="button" value="cos" onclick="trig('cos')">
+            <input type="button" value="tan" onclick="trig('tan')">
+            <input type="button" value="(" onclick="d('(')">
+        </div>
+        <div class="row">
+            <input type="button" value="log" onclick="log()">
+            <input type="button" value="ln" onclick="ln()">
+            <input type="button" value="^" onclick="d('^')">
+            <input type="button" value=")" onclick="d(')')">
+        </div>
+        <div class="row">
+            <input type="button" value="7" onclick="d('7')">
+            <input type="button" value="8" onclick="d('8')">
+            <input type="button" value="9" onclick="d('9')">
+            <input type="button" value="/" onclick="d('/')">
+        </div>
+        <div class="row">
+            <input type="button" value="4" onclick="d('4')">
+            <input type="button" value="5" onclick="d('5')">
+            <input type="button" value="6" onclick="d('6')">
+            <input type="button" value="*" onclick="d('*')">
+        </div>
+        <div class="row">
+            <input type="button" value="1" onclick="d('1')">
+            <input type="button" value="2" onclick="d('2')">
+            <input type="button" value="3" onclick="d('3')">
+            <input type="button" value="-" onclick="d('-')">
+        </div>
+        <div class="row">
+            <input type="button" value="0" onclick="d('0')">
+            <input type="button" value="." onclick="d('.')">
+            <input type="button" value="C" onclick="clear()" class="special">
+            <input type="button" value="+" onclick="d('+')" class="special">
+        </div>
+        <div class="row">
+            <input type="button" value="=" onclick="solve()" class="equal">
+        </div>
+    </div>
+</body>
+</html>
