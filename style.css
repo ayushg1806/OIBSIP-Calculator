@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://source.unsplash.com/1920x1080/?dark,space') no-repeat center center/cover;
+	justify-content: center;
+    align-items: center;
+	display: flex;
+    height: 100vh;
+    background-blur: 5px;
+}
+.container{
+	background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 805px; 
+
+}
+
+input[type="button"] {
+	width: 100%;
+	padding: 20px 40px;
+	background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	box-sizing: border-box;
+	transition: background-color 0.3s;
+}
+
+
+input[type="button"]:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+.X{
+	background-color: red;
+	border-radius: 5px;
+}
+
+.X:hover {
+    background-color: rgba(255, 92, 92, 1);
+}
+.equal {
+    background-color: rgba(40, 167, 69, 0.8);
+	border-radius: 5px;
+}
+.equal:hover {
+    background-color: rgba(40, 167, 69, 1);
+}
+
+input[type="text"] {
+	padding: 20px 240px;
+	font-size: 24px;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	text-align: left;
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+display {
+	text-align: left;
+}
+body{
+	background-color:  rgba(44,35,88,255);
+}
